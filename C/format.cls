@@ -5,7 +5,7 @@ body={390pt,530pt},marginparsep=10pt,marginpar=50pt]{geometry}
 \usepackage{fancyvrb}
 \usepackage[bottom,perpage,symbol*]{footmisc}
 \usepackage{graphicx}
-\usepackage[hidelinks]{hyperref}
+\usepackage[unicode=true,pdfusetitle,hidelinks]{hyperref}
 \usepackage{makeidx}
 \usepackage[toc]{multitoc}
 \usepackage{pifont}
@@ -16,7 +16,7 @@ body={390pt,530pt},marginparsep=10pt,marginpar=50pt]{geometry}
 {\ding{176}}{\ding{177}}{\ding{178}}{\ding{179}}{\ding{180}}{\ding{181}}}
 \setfnsymbol{chinese}
 
-\hypersetup{bookmarksnumbered=true,bookmarksdepth=2}
+\hypersetup{bookmarksnumbered=true,bookmarksdepth=2,pdfcreator={XeLaTeX},pdfauthor={戴方勤},pdfsubject={ACM Cheat Sheet},pdfkeywords={ACM, algorithms, data structures, cheatsheet}}
 
 \CTEXsetup[number={\thechapter}]{chapter}
 \CTEXsetup[format+={\raggedleft}]{chapter}
@@ -80,9 +80,7 @@ topsep=3pt plus 2pt minus 2pt,%
 parsep=0pt plus 2pt minus 2pt]}
 \newcommand\myendnum{\end{enumerate}}
 
-\DefineVerbatimEnvironment%
-  {Code}{Verbatim}
-  {fontsize=\small,baselinestretch=0.9,xleftmargin=3mm}
+% unified Code environment defined once
 
 \raggedbottom
 %\setlength{\parskip}{1ex plus .5ex minus .5ex}
